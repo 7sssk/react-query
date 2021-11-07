@@ -1,6 +1,6 @@
 {
   "name": "nomad-react-query",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -10,7 +10,8 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "jest": "jest --init",
-    "test": "jest --colors --watchAll",
+    "test": "jest",
+    "test:w": "jest --colors --watchAll",
     "publish": "npm publish --access=public",
     "prepare": "husky install"
   },
