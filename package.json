@@ -1,0 +1,44 @@
+{
+  "name": "nomad-react-query",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "jest": "jest --init",
+    "test": "jest --colors --watchAll",
+    "publish": "npm publish --access=public",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "react-query",
+    "react-request"
+  ],
+  "author": "anuarkhanov@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/react": "^17.0.34",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.4.4",
+    "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
